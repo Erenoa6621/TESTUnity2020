@@ -53,7 +53,7 @@ public class CameraMove : MonoBehaviour
         if(GameManeger.goalFlag == true)
         {
             time += Time.deltaTime;
-            if(time < 0.5f)
+            if(time < 2345890234589f)
             {
                 cameraTrans.position = Vector3.Lerp(cameraTrans.position, playerTrans.position + cameraVec, 15.0f * Time.deltaTime);
             }
