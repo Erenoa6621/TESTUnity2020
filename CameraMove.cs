@@ -23,29 +23,7 @@ public class CameraMove : MonoBehaviour
 
     void Start()
     {
-        if (tipe == 0)
-        {
-            rotaSpeed = player.GetComponent<InertiaPlayer>().rotaSpeed;
-            cameraTrans = transform;
-          //  cameraTrans.rotation = Quaternion.Euler(cameraRot);
-            joyconFlag = player.GetComponent<InertiaPlayer>().joyconFlag;
-        }
-        if (tipe == 1)
-        {
-            rotaSpeed = player.GetComponent<MovePlayer>().rotaSpeed;
-            cameraTrans = transform;
-           // cameraTrans.rotation = Quaternion.Euler(cameraRot);
-            joyconFlag = player.GetComponent<MovePlayer>().joyconFlag;
-
-        }
-        if (tipe == 2)
-        {
-            rotaSpeed = 2;
-            cameraTrans = transform;
-           // cameraTrans.rotation = Quaternion.Euler(cameraRot);
-            joyconFlag = false;
-
-        }
+       
 
     }
     void LateUpdate()
